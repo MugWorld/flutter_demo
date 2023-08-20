@@ -114,7 +114,7 @@ class JhAlert {
           clickCallback?.call(i, otherBtnTitles[i - 1]);
           Navigator.pop(context);
         },
-        child: Text(otherBtnTitles[i - 1]),
+        child: Text(otherBtnTitles[i - 1], style: TextStyle(color: Color(0xFF25304C)),),
       );
       otherButtons.add(w);
     }
@@ -187,7 +187,7 @@ class JhAlert {
                   clickCallback?.call(0, _cancelText);
                   Navigator.pop(context);
                 },
-                child: const Text(_cancelText),
+                child: const Text(_cancelText, style: TextStyle(color: Color(0xFF25304C))),
               ),
             );
           },
